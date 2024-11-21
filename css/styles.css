@@ -1,0 +1,77 @@
+/* Custom styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+}
+
+section {
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+      text-align: center;
+  }
+  .card {
+      margin-bottom: 20px;
+  }
+}
+/* General Styles for Cards */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content */
+  align-items: center;
+  height: 400px; /* Fixed height for all cards */
+  max-height: 400px; /* Ensures uniformity */
+  overflow: hidden; /* Prevent content overflow */
+  border: 1px solid #ddd; /* Optional: Adds a border for styling */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  padding: 20px; /* Space inside cards */
+  background-color: #fff; /* Card background */
+  text-align: center;
+}
+
+/* Images within Cards */
+.card img {
+  width: 100%; /* Image width spans the card */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images don't stretch but fill the card area */
+  border-radius: 8px; /* Optional: Matches card border */
+}
+
+/* Titles and Text */
+.card h3, .card p {
+  margin: 10px 0;
+  flex-shrink: 0; /* Prevents shrinking text */
+}
+
+/* Buttons inside Cards */
+.card button {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
